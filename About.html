@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My College</title>
+    <link href="college.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+
+<body>
+
+    <section class="sub-header">
+        <nav>
+            <a href="#">
+                <img src="logo.png">
+            </a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-x" onclick="hideMenu()"></i>
+                <ul>
+                    <li> <a href="college.html">Home</a></li>
+                    <li> <a href="About.html">About </a></li>
+                    <li> <a href="Courses.html">Courses</a></li>
+                    <li> <a href="Blog.html">Blog</a></li>
+                    <li> <a href="contactus.html">Contact Us</a></li>
+
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>We are the Best one!</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat consequatur quisquam explicabo sapiente autem nostrum quas ipsam voluptates odio accusamus cumque qui dolore neque placeat rerum, commodi non. Tempore perferendis, quod pariatur dolorum voluptates cum impedit iure molestiae consectetur esse.</p>
+                <a href="#" class="btn">Explore More</a>
+            </div>
+            <div class="about-col">
+                <img src="aboutus.jpg" alt="">
+                
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!-- Footer section -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae cumque <br/> perspiciatis ex est assumenda cupiditate, minus officia et quaerat.</p>
+          <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-brands fa-telegram"></i>
+            <i class="fa-brands fa-twitter"></i>
+          </div>
+          <p>Designed and Developed by Deepika &copy</p>
+    </section>
+
+
+    <script>
+        var navLinks = document.getElementById('navLinks');
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+</body>
+
+</html>

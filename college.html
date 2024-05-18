@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My College</title>
+    <link href="college.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+
+<body>
+
+    <section class="header">
+        <nav>
+            <a href="#">
+                <img src="logo.png">
+            </a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-x" onclick="hideMenu()"></i>
+                <ul>
+                    <li> <a href="college.html">Home</a></li>
+                    <li> <a href="About.html">About </a></li>
+                    <li> <a href="Courses.html">Courses</a></li>
+                    <li> <a href="Blog.html">Blog</a></li>
+                    <li> <a href="contactus.html">Contact Us</a></li>
+
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Best College</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae, quos dolores molestiae quibusdam
+                aut.</p>
+            <a href="#" class="button">Explore our college</a>
+        </div>
+
+    </section>
+
+    <!-- courses -->
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, inventore.</p>
+        <div class="row">
+            <div class="column-col">
+                <h3>CSE</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum vero, atque nulla dolorem veritatis
+                    earum sapiente iusto, facere dolore, fugit impedit.</p>
+            </div>
+            <div class="column-col">
+                <h3>ECE</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum vero, atque nulla dolorem veritatis
+                    earum sapiente iusto, facere dolore, fugit impedit.</p>
+            </div>
+            <div class="column-col">
+                <h3>CIVIL</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum vero, atque nulla dolorem veritatis
+                    earum sapiente iusto, facere dolore, fugit impedit.</p>
+            </div>
+            <div class="column-col">
+                <h3>EEE</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum vero, atque nulla dolorem veritatis
+                    earum sapiente iusto, facere dolore, fugit impedit.</p>
+            </div>
+            <div class="column-col">
+                <h3>ME</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum vero, atque nulla dolorem veritatis
+                    earum sapiente iusto, facere dolore, fugit impedit.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- campus -->
+    <section class="campus">
+        <h1>Our Campus</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam non ullam pariatur fugit voluptatibus
+            voluptates explicabo ex error aliquid numquam?</p>
+        <div class="row">
+            <div class="campus-col">
+                <img src="campus.jpeg" alt="campus img">
+                <div class="layer">
+                    <h3>Amalapuram</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="campus2.jpeg" alt="campus img">
+                <div class="layer">
+                    <h3>Vijayawada</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="camp.jpg" alt="campus img">
+                <div class="layer">
+                    <h3>Vizag</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facilities section -->
+    <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quibusdam iure, nobis obcaecati, doloremque at tenetur non earum tempore nihil maiores debitis, voluptates rerum vero. </p>
+        <div class="row">
+            <div class="facilities-col">
+                <img src="Library.webp" alt="Library">
+                <h3>Library</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, veniam eligendi delectus mollitia aperiam aspernatur numquam dignissimos architecto fuga molestias.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="Bus.png" alt="Bus">
+                <h3>Bus</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quidem neque architecto inventore nemo minima nisi magnam error perferendis amet!</p>
+            </div>
+            <div class="facilities-col">
+                <img src="cantee.jpeg" alt="Canteen">
+                <h3>Canteen</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum labore mollitia modi aut nemo tempore! Sit inventore ab iusto necessitatibus?</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="call-to-action">
+        <h1>Enroll Our Courses</h1>
+        <a href="#" class="button">Contact Us</a>   
+    </section>
+
+    <!-- Footer section -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae cumque <br/> perspiciatis ex est assumenda cupiditate, minus officia et quaerat.</p>
+          <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-brands fa-telegram"></i>
+            <i class="fa-brands fa-twitter"></i>
+          </div>
+          <p>Designed and Developed by Deepika &copy</p>
+    </section>
+
+
+    <script>
+        var navLinks = document.getElementById('navLinks');
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+</body>
+
+</html>

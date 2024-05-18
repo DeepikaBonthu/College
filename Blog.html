@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My College</title>
+    <link href="college.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+
+<body>
+
+    <section class="sub-header">
+        <nav>
+            <a href="#">
+                <img src="logo.png">
+            </a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-x" onclick="hideMenu()"></i>
+                <ul>
+                    <li> <a href="college.html">Home</a></li>
+                    <li> <a href="About.html">About </a></li>
+                    <li> <a href="Courses.html">Courses</a></li>
+                    <li> <a href="Blog.html">Blog</a></li>
+                    <li> <a href="contactus.html">Contact Us</a></li>
+
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Blog</h1>
+    </section>
+
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="Graduation.png" alt="">
+                <h2>Gradution Completion </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, tenetur reiciendis, deserunt harum aperiam voluptatum ex soluta ullam ea molestiae autem laboriosam sapiente expedita eveniet inventore illo, in minima impedit!</p> <br/>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium, earum assumenda! Non cumque incidunt obcaecati deleniti tenetur ut fugiat culpa!</p> <br>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius consequuntur corporis fugit natus doloremque reprehenderit. Dignissimos asperiores magnam doloribus consectetur. Blanditiis iusto, consectetur sint tempora expedita harum illo exercitationem repudiandae?</p>
+
+                <div class="comment-box">
+                    <h3>Leave Your Comment</h3>
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter Your Name">
+                        <input type="email" placeholder="Enter your email">
+                        <textarea rows="5" placeholder="Please leave your comment" ></textarea>
+                        <button type="submit" class="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <div class="blog-right">
+                <h3>Categories</h3>
+                <div>
+                    <span>DATA SCIENCE</span>
+                    <span>50</span>
+                </div>
+                <div>
+                    <span>ANALAYTICS</span>
+                    <span>22</span>
+                </div>
+                <div>
+                    <span>INSTRUMENTATION</span>
+                    <span>25</span>
+                </div>
+                <div>
+                    <span>JAVA</span>
+                    <span>15</span>
+                </div>
+                <div>
+                    <span>DIGITAL ELECTRONICS</span>
+                    <span>35</span>
+                </div>
+                <div>
+                    <span>SERVAING</span>
+                    <span>20</span>
+                </div>
+                <div>
+                    <span>ELETRICAL METERS</span>
+                    <span>45</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+
+
+
+    <!-- Footer section -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae cumque <br/> perspiciatis ex est assumenda cupiditate, minus officia et quaerat.</p>
+          <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-brands fa-telegram"></i>
+            <i class="fa-brands fa-twitter"></i>
+          </div>
+          <p>Designed and Developed by Deepika &copy</p>
+    </section>
+
+
+    <script>
+        var navLinks = document.getElementById('navLinks');
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+</body>
+
+</html>
